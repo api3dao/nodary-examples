@@ -2,6 +2,9 @@
 
 > An example project for reading Nodary data feeds
 
+See https://github.com/api3dao/data-feed-reader-example for instructions for using API3-managed dAPIs.
+This project demonstrates using Nodary feeds without depending on API3 data feed curation or the [API3 Market](https://market.api3.org/dapis) frontend.
+
 ## Instructions
 
 - Install dependencies
