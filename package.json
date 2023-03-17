@@ -1,0 +1,51 @@
+{
+  "name": "@nodary/examples",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "An example project for reading Nodary data feeds",
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy": "hardhat deploy --network $NETWORK",
+    "deploy-data-feed-proxy": "hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
+    "get-data-feed-id": "hardhat run scripts/get-data-feed-id.js",
+    "get-sponsor-wallet-address": "hardhat run scripts/get-sponsor-wallet-address.js",
+    "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
+    "lint:solhint": "solhint ./contracts/**/*.sol",
+    "lint:eslint": "eslint . --ext .js,.ts",
+    "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
+    "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
+    "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
+    "test": "hardhat test",
+    "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
+  },
+  "devDependencies": {
+    "@api3/chains": "^1.2.0",
+    "@api3/contracts": "^0.5.0",
+    "@nodary/utilities": "^0.1.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.0.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.36.0",
+    "hardhat": "^2.13.0",
+    "hardhat-deploy": "^0.11.25",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.8.4",
+    "prettier-plugin-solidity": "^1.1.3",
+    "solhint": "^3.4.1",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2"
+  }
+}
