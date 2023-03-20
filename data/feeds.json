@@ -296,10 +296,6 @@
     "deviationThresholdsInPercentages": [0.5]
   },
   {
-    "name": "QI/USD",
-    "deviationThresholdsInPercentages": [1]
-  },
-  {
     "name": "QUICK/USD",
     "deviationThresholdsInPercentages": [1]
   },
