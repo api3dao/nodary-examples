@@ -85,6 +85,8 @@ See https://github.com/api3dao/chains for details
 - polygon-zkevm-goerli-testnet
 - polygon-zkevm
 - polygon
+- zksync-testnet
+- zksync
 
 ## Local development and testing
 
