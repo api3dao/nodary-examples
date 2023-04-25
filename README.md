@@ -25,7 +25,7 @@ echo 'MNEMONIC="bike north stone..."' > .env
   See the command below, but use your own `FEED_NAME` value.
 
 ```sh
-FEED_NAME=ETH/USD yarn get-sponsor-wallet-address
+FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
 ```
 
 - Fund the sponsor wallet (unless it is already funded)
