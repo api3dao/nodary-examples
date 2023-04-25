@@ -19,7 +19,7 @@ yarn
 echo 'MNEMONIC="bike north stone..."' > .env
 ```
 
-- Refer to [`feeds.json`](/data/feeds.json) to find a data feed you like
+- Refer to [`feeds.json`](https://github.com/nodaryio/utilities/blob/main/data/feeds.json) to find a data feed you like
 
 - Derive the sponsor wallet addresses.
   See the command below, but use your own `FEED_NAME` value.
