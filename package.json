@@ -7,6 +7,7 @@
     "build": "hardhat compile",
     "deploy": "hardhat deploy --network $NETWORK",
     "deploy-data-feed-proxy": "hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
+    "deploy-data-feed-proxy-with-oev": "hardhat run scripts/deploy-data-feed-proxy-with-oev.js --network $NETWORK",
     "get-data-feed-id": "hardhat run scripts/get-data-feed-id.js",
     "get-sponsor-wallet-addresses": "hardhat run scripts/get-sponsor-wallet-addresses.js",
     "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
