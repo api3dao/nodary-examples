@@ -15,10 +15,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/airnode-protocol-v1@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.3.0.tgz#f977060087af641d0036802e6403447a03b2be44"
-  integrity sha512-hgIvfz/5H6klpWwCeJHTHIZQn3kLIxWE2jyjU8gU/hunmuBFJL0gNLjYOsrPQs0J+i+y39vyReJ5c+ozhu859Q==
+"@api3/airnode-protocol-v1@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.8.0.tgz#19a755bf0dfb127edd362282b09b9ff51409e626"
+  integrity sha512-QmDaFvD8U3CYuYqpKP7au7htr1fIW5s6YzoAfduDqh6z6jqFWUHd4wd3m0BYu715SZpu5xSa0lsYpfnPhxHpIg==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
@@ -29,12 +29,12 @@
   dependencies:
     zod "^3.21.4"
 
-"@api3/contracts@^0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.9.1.tgz#c2a5b14501cb7bc8496c9695e02d9c015adfc102"
-  integrity sha512-7D6/BaDvWjupERJ26lcCJuIwze0W90g3mV0NF5tWcoFCagsGvhuL0uYeYy89cl1Um5gE1yFt2vE7TUX4lYh4jA==
+"@api3/contracts@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.10.0.tgz#1b2bae4a77c8cf5b9ca15a6ac06b3b467a86d53f"
+  integrity sha512-AtkicTs2GmmN1qerr8K28q+ceLOGbFebMQd82sy0/h5MKBM431MyE6xB0ZseNa3Hg7bHGIo31ZOgQ6at+eI40g==
   dependencies:
-    "@api3/airnode-protocol-v1" "^2.3.0"
+    "@api3/airnode-protocol-v1" "^2.8.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
@@ -510,10 +510,10 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-0.6.1.tgz#82a7ccf5030ecc22a2e3efea8b5eedb8aa860f34"
-  integrity sha512-02g7q09HMC+bDW0MZjHtHZHoI0d6f59+Yi/pz+ZYhQrZvUk6znky45OSXM7D31eGk2xJcYuXP/dv+qgnpIep6g==
+"@nodary/utilities@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-0.7.0.tgz#1444b67dc9182cf93b075f9f34c6ffc40b8b5cbb"
+  integrity sha512-NWdIcrimP9IPtc5JNewKkhP5ZfERkvk8V6KUzRz/bMq6Aate7fGR7fRi/Rpl4ZlpMCOS4teoCeKTPmpLqEUdKQ==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
     ethers "^6.1.0"
