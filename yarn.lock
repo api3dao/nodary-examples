@@ -15,10 +15,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/airnode-protocol-v1@^2.8.0":
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.8.0.tgz#19a755bf0dfb127edd362282b09b9ff51409e626"
-  integrity sha512-QmDaFvD8U3CYuYqpKP7au7htr1fIW5s6YzoAfduDqh6z6jqFWUHd4wd3m0BYu715SZpu5xSa0lsYpfnPhxHpIg==
+"@api3/airnode-protocol-v1@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-2.10.0.tgz#b03cf02c7b65eed5b57cd37e24d91dbcbff62da6"
+  integrity sha512-5pXI9OUXeyM2IbVYrkW48Eymt7qGT5nfBU8GR2XZsRE8dCRZTIIfp+xdAMH+OFm62GGnUDz9e1uTiAHkRWrtKA==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
@@ -29,12 +29,12 @@
   dependencies:
     zod "^3.22.2"
 
-"@api3/contracts@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.10.0.tgz#1b2bae4a77c8cf5b9ca15a6ac06b3b467a86d53f"
-  integrity sha512-AtkicTs2GmmN1qerr8K28q+ceLOGbFebMQd82sy0/h5MKBM431MyE6xB0ZseNa3Hg7bHGIo31ZOgQ6at+eI40g==
+"@api3/contracts@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-0.12.0.tgz#473e1f3a977855f72e1a214c10c51139149710de"
+  integrity sha512-+fCmN75WHCwRqrkt/wC18mAV00hLyiGnMuXZY7RCDt8aIiv1k15iYfwns4p+uqklXEo+hWXBnfsKRfUddrxW4Q==
   dependencies:
-    "@api3/airnode-protocol-v1" "^2.8.0"
+    "@api3/airnode-protocol-v1" "^2.10.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
