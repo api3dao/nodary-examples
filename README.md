@@ -78,15 +78,20 @@ See https://github.com/api3dao/chains for details
 
 - arbitrum
 - avalanche
+- base
 - bsc
 - ethereum
 - fantom
 - gnosis
+- kava
+- linea
+- mantle
 - moonbeam
 - moonriver
 - optimism
 - polygon-zkevm
 - polygon
+- rsk
 - zksync
 
 ### Testnets
