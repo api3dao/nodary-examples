@@ -92,7 +92,6 @@ See https://github.com/api3dao/chains for details
 - polygon-zkevm
 - polygon
 - rsk
-- zksync
 
 ### Testnets
 
@@ -114,7 +113,6 @@ See https://github.com/api3dao/chains for details
 - polygon-zkevm-goerli-testnet
 - rsk-testnet
 - scroll-goerli-testnet
-- zksync-goerli-testnet
 
 ## Local development and testing
 
