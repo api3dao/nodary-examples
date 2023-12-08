@@ -47,7 +47,6 @@ NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8f
 - Deploy DataFeedReaderExample.
   See the command below, but use your own `NETWORK` and `PROXY` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
-  See [below](#note-about-zksync) for zkSync.
 
 ```sh
 NETWORK=polygon-testnet PROXY=0x94C10721Bc55E81E40E5Db92060335374F32546b yarn deploy
@@ -58,16 +57,6 @@ NETWORK=polygon-testnet PROXY=0x94C10721Bc55E81E40E5Db92060335374F32546b yarn de
 
 ```sh
 NETWORK=polygon-testnet yarn read-data-feed
-```
-
-### Note about zkSync
-
-This repo does not support deploying contracts on zkSync, which is why `yarn deploy` will fail.
-Instead, after deploying the proxy using `yarn deploy-data-feed-proxy`, you can test the proxy by reading from it directly.
-See the command below, but use your own `NETWORK` and `PROXY` values.
-
-```sh
-NETWORK=zksync-goerli-testnet PROXY=0x9bcf73d0C3aE0e1484B001a01FC883E7213367BF yarn read-direct
 ```
 
 ## Supported networks
