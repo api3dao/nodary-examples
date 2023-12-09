@@ -49,7 +49,7 @@ NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8f
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x94C10721Bc55E81E40E5Db92060335374F32546b yarn deploy
+NETWORK=polygon-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
 ```
 
 - Have DataFeedReaderExample read from the proxy.
@@ -123,7 +123,7 @@ You can update the proxy that your DataFeedReaderExample reads from.
 - See the command below, but use your own `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x26690F9f17FdC26D419371315bc17950a0FC90eD yarn update-proxy
+NETWORK=polygon-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
 ```
 
 ### Deploy a DataFeedProxyWithOev
