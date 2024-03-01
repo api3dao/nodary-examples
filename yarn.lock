@@ -27,18 +27,18 @@
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
-"@api3/chains@^4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.7.0.tgz#fdb20cc61974d9498d30785a53725200551cf126"
-  integrity sha512-H40HUw7TKYC+PFGKFRpzrBnMhOz1vjK3g4oDzM1J6hMEOX2L8wlbhvP3LbDf0OUoMuLfwq7FdTPSJNDAXAOPfA==
+"@api3/chains@^4.11.0":
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.11.0.tgz#d519c6a018c6737999a910301d497c743924d853"
+  integrity sha512-hEtqsn1HGMS/TfsoViIpudNy2G8DaTvbVzH1rTWSGsQRFCKc0PqNYvEAVPvEY4Aec7lM76bdf6c5HsAD4LzuIw==
   dependencies:
     viem "^2.7.1"
     zod "^3.22.4"
 
-"@api3/chains@^4.8.0":
-  version "4.8.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.8.0.tgz#012319f45077063e56a1fc0906ae5516a40e411f"
-  integrity sha512-58JeZcaIktqOjvH4z9jHPIdDZZdVBh7V19bnEsljwwf0KHIVd//59w2vKVOfzi8UjuRjws00ndjq4YdRXdVjIA==
+"@api3/chains@^4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.7.0.tgz#fdb20cc61974d9498d30785a53725200551cf126"
+  integrity sha512-H40HUw7TKYC+PFGKFRpzrBnMhOz1vjK3g4oDzM1J6hMEOX2L8wlbhvP3LbDf0OUoMuLfwq7FdTPSJNDAXAOPfA==
   dependencies:
     viem "^2.7.1"
     zod "^3.22.4"
@@ -541,13 +541,13 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-1.5.0.tgz#678e27df0e55dffcb10a3f4c6d067084c98adea5"
-  integrity sha512-tRGIceYPsA64jVggr08y90OqC1r/xT/PbPje6eBycXKcl5QCER6xYws6F5d/KguaPmrdu7qPjD8dREMiQtFSzQ==
+"@nodary/utilities@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-1.6.0.tgz#ae3a69f766bb204eaa223b847e218b14e9169263"
+  integrity sha512-WEV9PZx/HDRbpT7boaSZ2uhQmyYS4g0lpL6EDF1fTh47Ct6uqdiUgcfuv+NoW01RLqwvXn9RooRyS00xCb/2UQ==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
-    "@api3/chains" "^4.8.0"
+    "@api3/chains" "^4.11.0"
     ethers "^6.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
