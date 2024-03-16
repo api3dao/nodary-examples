@@ -20,10 +20,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/airnode-protocol-v1@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-3.2.0.tgz#bd74c4d015ee8b11b290809ab2622a8361df6f82"
-  integrity sha512-l0zej3d04ySea7NzVW4tNL155u3sFq3scxPrK1Bk5kXbtODxKa2xpLhczZ/Rr8HYGIvFiSsNSU+OgYNIhgiCYQ==
+"@api3/airnode-protocol-v1@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@api3/airnode-protocol-v1/-/airnode-protocol-v1-3.3.0.tgz#62f36b04471f527d66db7c4ff3fe9b325745df3c"
+  integrity sha512-Kk/Hb5EyEWqtIMeFM66u4PTvgUfBs4M8GPh1qLS3iDLpl/2PwqsvQkoafSmuMeZr4jyOpg3XXZZ07QFPIksOoA==
   dependencies:
     "@openzeppelin/contracts" "4.8.2"
 
@@ -35,20 +35,12 @@
     viem "^2.7.18"
     zod "^3.22.4"
 
-"@api3/chains@^4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.7.0.tgz#fdb20cc61974d9498d30785a53725200551cf126"
-  integrity sha512-H40HUw7TKYC+PFGKFRpzrBnMhOz1vjK3g4oDzM1J6hMEOX2L8wlbhvP3LbDf0OUoMuLfwq7FdTPSJNDAXAOPfA==
+"@api3/contracts@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-1.2.0.tgz#f487d27df025ffdbfebf631640a994f868627464"
+  integrity sha512-EdbLX5oZkvwBNksisYMMk+p12Jwrpc5iDmukxIDQQoR5p74qUIC9vnzWueAKoubnG8k2i2TZ8ZH+uCQ2e3oyKQ==
   dependencies:
-    viem "^2.7.1"
-    zod "^3.22.4"
-
-"@api3/contracts@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-1.1.1.tgz#9f319ad386ffbb0716217818252f163bb62354c2"
-  integrity sha512-uDzyHcx7aaUStt55HYJ7TJqkJIir1+6hho4S8q4z0MbhW0sFXklgjYTO0mg2EB2FJMmnQfN5VI/pEm2AQg0RkQ==
-  dependencies:
-    "@api3/airnode-protocol-v1" "^3.2.0"
+    "@api3/airnode-protocol-v1" "^3.3.0"
     ethers "^5.4.7"
 
 "@babel/code-frame@^7.0.0":
@@ -541,10 +533,10 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-1.8.0.tgz#79505355e1b0b6104dc1a2fb6bb7d0e0239bd263"
-  integrity sha512-Eh67AguMBFerXr4YnNxIgvdG5uRaHHBuXKbkXP5t15QMwMNS3Dr6ry2uWQRUSHkixZyZgQrb+Z2U7UUbS+t6kw==
+"@nodary/utilities@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.0.0.tgz#93b979ad0057c5fa0666dd7b0751263807aacfee"
+  integrity sha512-x+XtSHz2VO/M+ePn9U36CXx5COXyFMd5jtWT+RZIExFGc2O5TPRJZsrpivO+q7rMNEJVg2XLrhderR/WFW24JQ==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
     "@api3/chains" "^4.13.0"
@@ -5355,20 +5347,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-viem@^2.7.1:
-  version "2.7.6"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.7.6.tgz#2ada30ece1469367b606137983e5655cf66d721e"
-  integrity sha512-43TF0VYcTeNef9dax1/BhqlRLXpAo6HAiQ68hrJ8XRhDOou73nHZEjeFl8Eai4UFFodKhu+PbRUFzuuoixOUfg==
-  dependencies:
-    "@adraffy/ens-normalize" "1.10.0"
-    "@noble/curves" "1.2.0"
-    "@noble/hashes" "1.3.2"
-    "@scure/bip32" "1.3.2"
-    "@scure/bip39" "1.2.1"
-    abitype "1.0.0"
-    isows "1.0.3"
-    ws "8.13.0"
 
 viem@^2.7.18:
   version "2.8.5"
