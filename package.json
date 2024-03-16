@@ -23,7 +23,7 @@
   "devDependencies": {
     "@api3/chains": "^4.13.0",
     "@api3/contracts": "^1.2.0",
-    "@nodary/utilities": "^1.8.0",
+    "@nodary/utilities": "^2.0.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
