@@ -3,6 +3,11 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
+      "matchUpdateTypes": ["major"],
+      "schedule": ["before 10am on the first day of the month"],
+      "groupName": "other major updates"
+    },
+    {
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 10am on the first day of the month"],
       "groupName": "other minor updates"
