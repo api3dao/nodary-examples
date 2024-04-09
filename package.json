@@ -33,7 +33,7 @@
     "@typechain/hardhat": "^6.1.2",
     "@types/chai": "^4.2.0",
     "@types/mocha": ">=9.1.0",
-    "chai": "^4.2.0",
+    "chai": "^5.1.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.36.0",
     "hardhat": "^2.13.0",
