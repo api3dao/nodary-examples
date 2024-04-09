@@ -25,20 +25,12 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/chains@^4.13.0":
-  version "4.13.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.13.0.tgz#dd9f87eee9e0d2efb628009e35e9d68660957fa8"
-  integrity sha512-MjAz/03peNiqOUqWie35mO0QihPTWYYGU+fGXTo0NkPher3bsl0EhSdxDIn4uzkRTgCskAN4jTCwGI28b70y6A==
+"@api3/chains@^4.16.1", "@api3/chains@^4.16.2":
+  version "4.16.2"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.16.2.tgz#09cb82f68a9f1a0ddc2845d4f36e7c7b791abf8a"
+  integrity sha512-rMjfjb0jBgJo9hLahBw2lBdaUhnMRNb3JQngMRgvC/XdpyRJQQHRkHEebA7BfFiYhfbRTWczUNhky6qzc2Hr9w==
   dependencies:
-    viem "^2.7.18"
-    zod "^3.22.4"
-
-"@api3/chains@^4.14.0":
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.14.0.tgz#aacaf063d3c5602e267352683706de61c69deb94"
-  integrity sha512-zM37/EW6bsYVmu6wea+3+D7FlK60kI6LBYwCRxE85ISUUCT6gkclkFLksGN6vrw4ZTl9Xool2fbhALHiuYA7Uw==
-  dependencies:
-    viem "^2.7.18"
+    viem "^2.9.6"
     zod "^3.22.4"
 
 "@api3/contracts@^2.4.0":
@@ -538,13 +530,13 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.1.0.tgz#5403bd5fe7a1b3dc843ef2c813866981bb65ae76"
-  integrity sha512-FWAmi5GyR95Q54lCN1vFtqYwT7mhw5eihyldUCBVv8rQx08aI/d8did+sOHew0U+ztaden0Y8Dd96EvqnTM+2Q==
+"@nodary/utilities@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.2.0.tgz#ecf5e26472c808ccd9c0ef5260ba6ccf5ff7f51d"
+  integrity sha512-mBlNuUsr1uQW0Da7fsyvIgl/LkRMnI2k1u9vfhbtWyV4JgGaHF6f0Ti5G6TpCQrDrz/22lvXDt4+sXIjlTl31g==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
-    "@api3/chains" "^4.13.0"
+    "@api3/chains" "^4.16.1"
     ethers "^6.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -5376,10 +5368,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-viem@^2.7.18:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.8.5.tgz#c0120e7f228fbb5be760c625bb2637c7cfa1b8df"
-  integrity sha512-EAmZ/jP7Ycmu72zRrB+N/fINEXMVBaLLsUaHwu5LoIjAzmE/f/33RV9AlhUA6RNZ5kujomylSytIyDakzQYXCQ==
+viem@^2.9.6:
+  version "2.9.15"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.15.tgz#a176f3c3504a6785333ac0f948666854c3a29e30"
+  integrity sha512-7kcmHqybc3JhpjL8gKY7YxBYpZt1//qhoTZIU5Ez9JdyRCnYMMnJu20s7wd7Gv6a3zPbq8jV8dCp94a/NLJJcA==
   dependencies:
     "@adraffy/ens-normalize" "1.10.0"
     "@noble/curves" "1.2.0"
