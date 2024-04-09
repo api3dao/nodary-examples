@@ -18,7 +18,7 @@ async function main() {
     '0x'
   );
   if ((await hre.ethers.provider.getCode(dataFeedProxyWithOevAddress)) === '0x') {
-    const proxyFactoryAddress = api3Contracts.references.ProxyFactory[chainId.toString()];
+    const proxyFactoryAddress = api3Contracts.deploymentAddresses.ProxyFactory[chainId.toString()];
     const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
     const proxyFactory = new hre.ethers.Contract(
       proxyFactoryAddress,
