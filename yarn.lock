@@ -25,7 +25,7 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/chains@^4.16.1", "@api3/chains@^4.16.2":
+"@api3/chains@^4.16.1":
   version "4.16.2"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.16.2.tgz#09cb82f68a9f1a0ddc2845d4f36e7c7b791abf8a"
   integrity sha512-rMjfjb0jBgJo9hLahBw2lBdaUhnMRNb3JQngMRgvC/XdpyRJQQHRkHEebA7BfFiYhfbRTWczUNhky6qzc2Hr9w==
@@ -33,10 +33,18 @@
     viem "^2.9.6"
     zod "^3.22.4"
 
-"@api3/contracts@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.4.0.tgz#48f2f338d233e7b9022d4ffa3fd6b299721f530b"
-  integrity sha512-jfBBB/pJKnQccSCi9qOdzGOY30mq7HtQn11xi38w8pHbhVl5HLhpDsXkeOrQTGnw09R48QVvr60KkDVCmrZD8w==
+"@api3/chains@^4.17.1":
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.1.tgz#9a90f54cadf9cc8b00c2964efc7a32f9b6c490da"
+  integrity sha512-gPglE7PPm6TCdnDR+/EC5J8z4yrTS/eV/24PRK8HzkLwRkMx4UdnoNwQ2B00bGlQTkPnMuxTTnEzgyAnv3qhNQ==
+  dependencies:
+    viem "^2.9.6"
+    zod "^3.22.4"
+
+"@api3/contracts@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.5.0.tgz#2958077499d134e8dbafc3cf971dd8b99a2623bc"
+  integrity sha512-tPrzkF2oA98wYT07fvJ1eu6LwJuXcUVI0Sljs4G17vXQopClkMyKcVUMcI9b6aI3ygwbqgy6XC1RONMSA3xFbA==
   dependencies:
     ethers "^6.11.1"
 
@@ -530,10 +538,10 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.2.0.tgz#ecf5e26472c808ccd9c0ef5260ba6ccf5ff7f51d"
-  integrity sha512-mBlNuUsr1uQW0Da7fsyvIgl/LkRMnI2k1u9vfhbtWyV4JgGaHF6f0Ti5G6TpCQrDrz/22lvXDt4+sXIjlTl31g==
+"@nodary/utilities@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.3.0.tgz#5b31e2b9eafa4f4e18cbe55236ea650a90e1b91d"
+  integrity sha512-l7lF9nAOYSM145FLP/+bAd8PvJp1ukRiFQTPCQdHh6aHm+eiwDkmOWRz0iaffZoFoqMyjfi3R/surekaar4DDQ==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
     "@api3/chains" "^4.16.1"
