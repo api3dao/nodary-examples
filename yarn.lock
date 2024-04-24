@@ -25,14 +25,6 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/chains@^4.16.1":
-  version "4.16.2"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.16.2.tgz#09cb82f68a9f1a0ddc2845d4f36e7c7b791abf8a"
-  integrity sha512-rMjfjb0jBgJo9hLahBw2lBdaUhnMRNb3JQngMRgvC/XdpyRJQQHRkHEebA7BfFiYhfbRTWczUNhky6qzc2Hr9w==
-  dependencies:
-    viem "^2.9.6"
-    zod "^3.22.4"
-
 "@api3/chains@^4.17.1":
   version "4.17.1"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.1.tgz#9a90f54cadf9cc8b00c2964efc7a32f9b6c490da"
@@ -538,13 +530,13 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.3.1.tgz#84cd710534387d3c654b5b7c968cd4329d3afcfb"
-  integrity sha512-WhLefidX2rzLNUHUjEJj+6ojPbO5ZPpG7oONiNW0rSX5fEg/FjjVWzVsLEPETO+KqKxa6EaIxHQEOhk7t/hNHQ==
+"@nodary/utilities@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.4.0.tgz#0da6fad4f78361e7f66f246083777479cea186c7"
+  integrity sha512-i3EXUZwy5ObjO9corQpybQPbcZZVEAJyIEarSB632vS+6XpSp/CquM8m3HQZ4X8W/5oEHnrVpW0d2zco3VXUuw==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
-    "@api3/chains" "^4.16.1"
+    "@api3/chains" "^4.17.1"
     ethers "^6.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
