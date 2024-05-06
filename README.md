@@ -41,7 +41,7 @@ FEED_NAME=ETH/USD yarn get-data-feed-id
   See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
 
 ```sh
-NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
+NETWORK=bsc-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
 - Deploy DataFeedReaderExample.
@@ -49,59 +49,23 @@ NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8f
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
+NETWORK=bsc-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
 ```
 
 - Have DataFeedReaderExample read from the proxy.
   See the command below, but use your own `NETWORK` value.
 
 ```sh
-NETWORK=polygon-testnet yarn read-data-feed
+NETWORK=bsc-testnet yarn read-data-feed
 ```
 
 ## Supported networks
 
+```sh
+yarn list-supported-chains
+```
+
 See https://github.com/api3dao/chains for details
-
-### Mainnets
-
-- arbitrum
-- avalanche
-- base
-- bsc
-- ethereum
-- fantom
-- gnosis
-- kava
-- linea
-- mantle
-- moonbeam
-- moonriver
-- optimism
-- polygon-zkevm
-- polygon
-- rsk
-
-### Testnets
-
-- arbitrum-goerli-testnet
-- avalanche-testnet
-- base-goerli-testnet
-- bsc-testnet
-- cronos-testnet
-- ethereum-goerli-testnet
-- ethereum-sepolia-testnet
-- fantom-testnet
-- gnosis-testnet
-- kava-testnet
-- linea-goerli-testnet
-- mantle-goerli-testnet
-- moonbeam-testnet
-- optimism-goerli-testnet
-- polygon-testnet
-- polygon-zkevm-goerli-testnet
-- rsk-testnet
-- scroll-goerli-testnet
 
 ## Local development and testing
 
