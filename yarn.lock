@@ -33,12 +33,20 @@
     viem "^2.9.6"
     zod "^3.22.4"
 
-"@api3/contracts@^2.5.0":
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-2.5.0.tgz#2958077499d134e8dbafc3cf971dd8b99a2623bc"
-  integrity sha512-tPrzkF2oA98wYT07fvJ1eu6LwJuXcUVI0Sljs4G17vXQopClkMyKcVUMcI9b6aI3ygwbqgy6XC1RONMSA3xFbA==
+"@api3/chains@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-6.1.0.tgz#fa2da1bc6d56694f87045a5bf249da144d7536fb"
+  integrity sha512-OG6565Rg8URO27qNJioP5+CdUlg06TKwCwOo3L3TO4s7zpP3BSuhUz5CrjKtTfRUDGfbDtqIWWgPzGfrGPKT2Q==
   dependencies:
-    ethers "^6.11.1"
+    viem "^2.9.29"
+    zod "^3.23.5"
+
+"@api3/contracts@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-3.4.0.tgz#a84ac204be40c999a7ac6987e18f6ca6757df6bb"
+  integrity sha512-4hY8k3YeVfkqYd3jv1CpSevBRpVq/gaCW8Ax1gL07pymJ27m/MYB/ZDwpZ9nGexGzYHe2+KheJam8QQjiHobXA==
+  dependencies:
+    ethers "^6.12.1"
 
 "@babel/code-frame@^7.0.0":
   version "7.18.6"
@@ -530,10 +538,10 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-2.4.0.tgz#0da6fad4f78361e7f66f246083777479cea186c7"
-  integrity sha512-i3EXUZwy5ObjO9corQpybQPbcZZVEAJyIEarSB632vS+6XpSp/CquM8m3HQZ4X8W/5oEHnrVpW0d2zco3VXUuw==
+"@nodary/utilities@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-3.0.0.tgz#b1644e8d79dbdcb95483953fc7ccd75a112d38a7"
+  integrity sha512-6XotPljqNdvRyXIuHZV/Hhq9vl2j6yl+LTsot0BqtRgBgbqBlDErjTFH4vxbsr6KLqtuho+op63/tEVi2Hx54Q==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
     "@api3/chains" "^4.17.1"
@@ -2427,10 +2435,10 @@ ethers@^6.1.0:
     tslib "2.4.0"
     ws "8.5.0"
 
-ethers@^6.11.1:
-  version "6.11.1"
-  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.11.1.tgz#96aae00b627c2e35f9b0a4d65c7ab658259ee6af"
-  integrity sha512-mxTAE6wqJQAbp5QAe/+o+rXOID7Nw91OZXvgpjDa1r4fAbq2Nu314oEZSbjoRLacuCzs7kUC3clEvkCQowffGg==
+ethers@^6.12.1:
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/ethers/-/ethers-6.12.1.tgz#517ff6d66d4fd5433e38e903051da3e57c87ff37"
+  integrity sha512-j6wcVoZf06nqEcBbDWkKg8Fp895SS96dSnTCjiXT+8vt2o02raTn4Lo9ERUuIVU5bAjoPYeA+7ytQFexFmLuVw==
   dependencies:
     "@adraffy/ens-normalize" "1.10.1"
     "@noble/curves" "1.2.0"
@@ -5368,6 +5376,20 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+viem@^2.9.29:
+  version "2.9.32"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.32.tgz#7270beb447d0df5185030172403a67334cb99970"
+  integrity sha512-V2K1kkR+L/JZ1be/3NTsqLhN7BsMXXTTFOH3/LyEALbL8gln7QCHvmI942VbY9l5eYYH1EQ90vwKh24TqDd9gw==
+  dependencies:
+    "@adraffy/ens-normalize" "1.10.0"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@scure/bip32" "1.3.2"
+    "@scure/bip39" "1.2.1"
+    abitype "1.0.0"
+    isows "1.0.3"
+    ws "8.13.0"
+
 viem@^2.9.6:
   version "2.9.15"
   resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.15.tgz#a176f3c3504a6785333ac0f948666854c3a29e30"
@@ -5620,3 +5642,8 @@ zod@^3.22.4:
   version "3.22.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
   integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
+
+zod@^3.23.5:
+  version "3.23.6"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.23.6.tgz#c08a977e2255dab1fdba933651584a05fcbf19e1"
+  integrity sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==
