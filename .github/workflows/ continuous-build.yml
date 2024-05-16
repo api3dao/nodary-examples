@@ -11,4 +11,5 @@ jobs:
           node-version: 20
       - run: yarn
       - run: yarn lint
+      - run: yarn list-supported-chains
       - run: yarn test

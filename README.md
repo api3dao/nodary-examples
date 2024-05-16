@@ -41,7 +41,7 @@ FEED_NAME=ETH/USD yarn get-data-feed-id
   See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
 
 ```sh
-NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
+NETWORK=bsc-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
 - Deploy DataFeedReaderExample.
@@ -49,59 +49,23 @@ NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8f
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
+NETWORK=bsc-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
 ```
 
 - Have DataFeedReaderExample read from the proxy.
   See the command below, but use your own `NETWORK` value.
 
 ```sh
-NETWORK=polygon-testnet yarn read-data-feed
+NETWORK=bsc-testnet yarn read-data-feed
 ```
 
 ## Supported networks
 
+```sh
+yarn list-supported-chains
+```
+
 See https://github.com/api3dao/chains for details
-
-### Mainnets
-
-- arbitrum
-- avalanche
-- base
-- bsc
-- ethereum
-- fantom
-- gnosis
-- kava
-- linea
-- mantle
-- moonbeam
-- moonriver
-- optimism
-- polygon-zkevm
-- polygon
-- rsk
-
-### Testnets
-
-- arbitrum-goerli-testnet
-- avalanche-testnet
-- base-goerli-testnet
-- bsc-testnet
-- cronos-testnet
-- ethereum-goerli-testnet
-- ethereum-sepolia-testnet
-- fantom-testnet
-- gnosis-testnet
-- kava-testnet
-- linea-goerli-testnet
-- mantle-goerli-testnet
-- moonbeam-testnet
-- optimism-goerli-testnet
-- polygon-testnet
-- polygon-zkevm-goerli-testnet
-- rsk-testnet
-- scroll-goerli-testnet
 
 ## Local development and testing
 
@@ -123,7 +87,7 @@ You can update the proxy that your DataFeedReaderExample reads from.
 - See the command below, but use your own `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=polygon-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
+NETWORK=bsc-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
 ```
 
 ### Deploy a DataFeedProxyWithOev
@@ -140,7 +104,7 @@ Users that want OEV-support should deploy a DataFeedProxyWithOev (instead of a D
 See the command below, but use your own `NETWORK`, `DATA_FEED_ID` and `OEV_BENEFICIARY` values.
 
 ```sh
-NETWORK=polygon-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d OEV_BENEFICIARY=0x07b589f06bD0A5324c4E2376d66d2F4F25921DE1 yarn deploy-data-feed-proxy-with-oev
+NETWORK=bsc-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d OEV_BENEFICIARY=0x07b589f06bD0A5324c4E2376d66d2F4F25921DE1 yarn deploy-data-feed-proxy-with-oev
 ```
 
 Note that DataFeedProxy and DataFeedProxyWithOev have identical interfaces, which is exported by `@api3/contracts` as IProxy.

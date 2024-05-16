@@ -13,6 +13,7 @@
     "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
     "lint:solhint": "solhint ./contracts/**/*.sol",
     "lint:eslint": "eslint . --ext .js,.ts",
+    "list-supported-chains": "node scripts/list-supported-chains.js",
     "prettier:check": "prettier --check \"./**/*.{js,ts,md,json,sol}\"",
     "prettier": "prettier --write \"./**/*.{js,ts,md,json,sol}\"",
     "read-data-feed": "hardhat run scripts/read-data-feed.js --network $NETWORK",
