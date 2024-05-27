@@ -25,18 +25,18 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/chains@^4.17.1":
-  version "4.17.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-4.17.1.tgz#9a90f54cadf9cc8b00c2964efc7a32f9b6c490da"
-  integrity sha512-gPglE7PPm6TCdnDR+/EC5J8z4yrTS/eV/24PRK8HzkLwRkMx4UdnoNwQ2B00bGlQTkPnMuxTTnEzgyAnv3qhNQ==
-  dependencies:
-    viem "^2.9.6"
-    zod "^3.22.4"
-
 "@api3/chains@^6.3.1":
   version "6.3.1"
   resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-6.3.1.tgz#092a3c453025fc2d37095b7a56796a831ebfcca8"
   integrity sha512-NUfHMfK4EXQW/Nw4pIG2wxuHBauR4KxkibQo9w3ktPU+i3H4cEE0gginhRWLnl2EWEmwR1Z+a6YAgr8EZTUV4A==
+  dependencies:
+    viem "^2.9.29"
+    zod "^3.23.5"
+
+"@api3/chains@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.0.0.tgz#e46c20e626920126133078124b4f348b8caac931"
+  integrity sha512-rSpsIqblh/CGhoSa2fufUYCSkQ52LG40jKmsv8Icu8uYBeBA4dSmRZ6uKjsJ3Ix5HB9j2EZFk4b0ZvLa+wixkw==
   dependencies:
     viem "^2.9.29"
     zod "^3.23.5"
@@ -538,13 +538,13 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-3.2.0.tgz#5caf066eaef91f137d7259ae77d05e30f2c83eb9"
-  integrity sha512-UnK9aZfakm9KpwTDdH9fBt+j4PDgpgcUSewcooTGKfib28bG4ouNixtdEJ1iGBoQuPlm9PzlPeRsNa/ObgtlqQ==
+"@nodary/utilities@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-3.3.0.tgz#ba0723b50c33335d18be1787b04eade00efb23c6"
+  integrity sha512-P3I9eccNJnQhn1sIBRoNJfTrxy1pYQKZ5OwiI5PpG+YX7+V4+d5+PhzuPifIkxht1eelFybSC01mQguss7hVNg==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
-    "@api3/chains" "^4.17.1"
+    "@api3/chains" "^7.0.0"
     ethers "^6.1.0"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -5216,20 +5216,6 @@ viem@^2.9.29:
     isows "1.0.3"
     ws "8.13.0"
 
-viem@^2.9.6:
-  version "2.9.15"
-  resolved "https://registry.yarnpkg.com/viem/-/viem-2.9.15.tgz#a176f3c3504a6785333ac0f948666854c3a29e30"
-  integrity sha512-7kcmHqybc3JhpjL8gKY7YxBYpZt1//qhoTZIU5Ez9JdyRCnYMMnJu20s7wd7Gv6a3zPbq8jV8dCp94a/NLJJcA==
-  dependencies:
-    "@adraffy/ens-normalize" "1.10.0"
-    "@noble/curves" "1.2.0"
-    "@noble/hashes" "1.3.2"
-    "@scure/bip32" "1.3.2"
-    "@scure/bip39" "1.2.1"
-    abitype "1.0.0"
-    isows "1.0.3"
-    ws "8.13.0"
-
 web3-utils@^1.3.6:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-1.8.2.tgz#c32dec5e9b955acbab220eefd7715bc540b75cc9"
@@ -5472,11 +5458,6 @@ zksync-ethers@^5.0.0:
   integrity sha512-X99c5APICTlRzyXXjfwkEjRzOPp3Jwo62+z2DVGaZbe+b9Apbizcd2UGV4NGomoAR2GXPbeiSqi1cf3Hbo3cQw==
   dependencies:
     ethers "~5.7.0"
-
-zod@^3.22.4:
-  version "3.22.4"
-  resolved "https://registry.yarnpkg.com/zod/-/zod-3.22.4.tgz#f31c3a9386f61b1f228af56faa9255e845cf3fff"
-  integrity sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==
 
 zod@^3.23.5:
   version "3.23.6"
