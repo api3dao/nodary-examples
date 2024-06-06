@@ -2,22 +2,18 @@ const { CHAINS } = require('@api3/chains');
 const { nodaryChainIds } = require('@nodary/utilities');
 
 async function main() {
-  const mainnets = [];
-  const testnets = [];
+  const supportedChains = nodaryChainIds()
+    .map((nodaryChainId) => CHAINS.find(({ id }) => id === nodaryChainId))
+    .map((chain) => {
+      return {
+        id: Number(chain.id),
+        name: chain.alias,
+        type: chain.testnet ? 'testnet' : 'mainnet',
+      };
+    })
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-  nodaryChainIds().forEach((chainId) => {
-    const chain = CHAINS.find(({ id }) => id === chainId);
-    if (!chain) {
-      throw new Error(`Chain ${chainId} does not exist in @api3/chains`);
-    }
-    const { alias: chainAlias } = chain;
-    chain.testnet ? testnets.push(chainAlias) : mainnets.push(chainAlias);
-  });
-
-  console.log('Mainnets:');
-  mainnets.sort().forEach((chainAlias) => console.log(`  ${chainAlias}`));
-  console.log('Testnets:');
-  testnets.sort().forEach((chainAlias) => console.log(`  ${chainAlias}`));
+  console.table(supportedChains);
 }
 
 main()
