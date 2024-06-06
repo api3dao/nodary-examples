@@ -24,14 +24,14 @@ echo 'MNEMONIC="bike north stone..."' > .env
   - Copy the data feed ID (denoted as the _Beacon ID_) from the table.
     You can also use the following command with your `FEED_NAME` value.
     `sh
-    FEED_NAME=ETH/USD yarn get-data-feed-id
-    `
+FEED_NAME=ETH/USD yarn get-data-feed-id
+`
 
   - Copy the sponsor wallet address corresponding to the deviation threshold you like from the table.
     You can also use the following command with your `FEED_NAME` value.
     `sh
-    FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
-    `
+FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
+`
 
 - Fund the sponsor wallet (unless it is already funded).
   The Nodary feed will start updating within 15 minutes of the sponsor wallet being funded.
