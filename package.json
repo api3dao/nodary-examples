@@ -22,7 +22,7 @@
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
   "devDependencies": {
-    "@api3/chains": "^7.1.0",
+    "@api3/chains": "^7.1.2",
     "@api3/contracts": "^4.0.0",
     "@nodary/utilities": "^3.4.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
