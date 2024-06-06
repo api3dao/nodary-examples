@@ -1,9 +1,9 @@
 # Nodary data feed reader example
 
-> An example project for reading Nodary data feeds
+> An example project that reads a [Nodary](https://nodary.io/) data feed
 
-See https://github.com/api3dao/data-feed-reader-example for instructions for using API3-managed dAPIs.
-This project demonstrates using Nodary feeds without depending on API3 data feed curation or the [API3 Market](https://market.api3.org/dapis) frontend.
+This project demonstrates using a single-source Nodary feed without depending on API3 data feed curation or the [market.api3.org](https://market.api3.org) frontend.
+See https://github.com/api3dao/data-feed-reader-example for an example that uses an API3 data feed.
 
 ## Instructions
 
@@ -19,93 +19,76 @@ yarn
 echo 'MNEMONIC="bike north stone..."' > .env
 ```
 
-- Refer to [`feeds.json`](https://github.com/nodaryio/utilities/blob/main/data/feeds.json) to find a data feed you like
+- Go to [nodary.io/feeds](https://nodary.io/feeds) and find a data feed you like
 
-- Derive the sponsor wallet addresses.
-  See the command below, but use your own `FEED_NAME` value.
+  - Copy the data feed ID (denoted as the _Beacon ID_) from the table.
+    You can also use the following command with your `FEED_NAME` value.
 
-```sh
-FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
-```
+    ```sh
+    FEED_NAME=ETH/USD yarn get-data-feed-id
+    ```
 
-- Fund the sponsor wallet (unless it is already funded)
+  - Copy the sponsor wallet address corresponding to the deviation threshold you like from the table.
+    You can also use the following command with your `FEED_NAME` value.
 
-- Derive the data feed ID.
-  See the command below, but use your own `FEED_NAME` value.
+    ```sh
+    FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
+    ```
 
-```sh
-FEED_NAME=ETH/USD yarn get-data-feed-id
-```
+- Fund the sponsor wallet (unless it is already funded).
+  The Nodary feed will start updating within 15 minutes of the sponsor wallet being funded.
 
-- Deploy the proxy to the data feed.
-  See the command below, but use your own `NETWORK` and `DATA_FEED_ID` values.
-
-```sh
-NETWORK=bsc-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
-```
-
-- Deploy DataFeedReaderExample.
-  See the command below, but use your own `NETWORK` and `PROXY` values.
+- Deploy `DataFeedProxy` by using the command below with your `NETWORK` and `DATA_FEED_ID` values.
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=bsc-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
+NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
-- Have DataFeedReaderExample read from the proxy.
-  See the command below, but use your own `NETWORK` value.
+- Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=bsc-testnet yarn read-data-feed
+NETWORK=ethereum-sepolia-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
+```
+
+- Have `DataFeedReaderExample` read from the proxy you have deployed by using the command below with your `NETWORK` value
+
+```sh
+NETWORK=ethereum-sepolia-testnet yarn read-data-feed
 ```
 
 ## Supported networks
+
+Chains listed on [nodary.io/chains](https://nodary.io/chains) are all supported.
+You can run the following command to list them.
 
 ```sh
 yarn list-supported-chains
 ```
 
-See https://github.com/api3dao/chains for details
-
 ## Local development and testing
 
-`@api3/contracts` provides a MockProxy contract for local development testing.
-See the tests for its usage, and run the tests with
+`@api3/contracts` provides a `MockProxy` contract for local development.
+See the [tests](./test/DataFeedReaderExample.sol.js) for its usage, and run the tests with the following command.
 
 ```sh
 yarn test
 ```
 
-# Advanced
+## Update the proxy address of `DataFeedReaderExample`
 
-### Update the proxy address of DataFeedReaderExample
-
-You can update the proxy that your DataFeedReaderExample reads from.
+You can update the proxy that your `DataFeedReaderExample` reads from.
 
 - Follow the [instructions](#instructions)
-- Deploy a new proxy
-- See the command below, but use your own `NETWORK` and `PROXY` values
+- Find a new feed on [nodary.io/feeds](https://nodary.io/feeds) and deploy its proxy
+- Use the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=bsc-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
+NETWORK=ethereum-sepolia-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
 ```
 
-### Deploy a DataFeedProxyWithOev
-
-> This section is for deploying a proxy that can receive OEV updates (in addition to base data feed updates).
-> This proxy can only receive OEV updates when it is used alongside the [API3 OEV Relay](https://github.com/api3dao/oev-litepaper/blob/main/oev-litepaper.pdf).
-> The API3 OEV Relay is not open to the public yet.
-
-OEV auction proceeds are collected at the Api3ServerV1 contract.
-At any time, any account can withdraw the accumulated proceeds belonging to a specific proxy to its _OEV beneficiary_ (refer to the [implementation](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/api3-server-v1/OevDataFeedServer.sol#L147) for exact information).
-The OEV beneficiary of the proxy is specified while deploying it.
-
-Users that want OEV-support should deploy a DataFeedProxyWithOev (instead of a DataFeedProxy), and specify the address of the OEV beneficiary while doing so.
-See the command below, but use your own `NETWORK`, `DATA_FEED_ID` and `OEV_BENEFICIARY` values.
+- Use the command below to confirm that `DataFeedReaderExample` now reads the new data feed
 
 ```sh
-NETWORK=bsc-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d OEV_BENEFICIARY=0x07b589f06bD0A5324c4E2376d66d2F4F25921DE1 yarn deploy-data-feed-proxy-with-oev
+NETWORK=ethereum-sepolia-testnet yarn read-data-feed
 ```
-
-Note that DataFeedProxy and DataFeedProxyWithOev have identical interfaces, which is exported by `@api3/contracts` as IProxy.
-By using IProxy in your contract, you can seamlessly switch between a DataFeedProxy and a DataFeedProxyWithOev simply by updating the proxy address.
