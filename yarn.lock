@@ -33,18 +33,18 @@
     viem "^2.9.29"
     zod "^3.23.5"
 
-"@api3/chains@^7.1.2":
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.1.2.tgz#0ca62bd0c1fe46317085b2ede6a600adbe1057a8"
-  integrity sha512-2eQBE+VL8cq49Dkw2jI2w/F5Q3Eb0c9zKIqbec6u/3tdHBoC1K2AewIufkBc192/RfJ9+U4vjpWNNhbAc3/jmA==
+"@api3/chains@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-7.2.1.tgz#2603f0b3174b63a76c85137965e6447a9eb0f2fc"
+  integrity sha512-UQC5PUS0S4eI3oigC+AmyaBWzAybyl7Bf54NHldbZP/xUpVoJW9nYJWbQf//s/3m7sxEr4phbmOsqzwpmSr/pg==
   dependencies:
     viem "^2.13.3"
     zod "^3.23.8"
 
-"@api3/contracts@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.0.0.tgz#5ae24666e91bc7945e1706b737d25fbbbc2029a9"
-  integrity sha512-iSx6QLzjLj/FzY7+rZoVqctzwWpTxXThE4e3B0siKPofP4LzZWGe8a+DH//yhh7vmbNhNxP5jSmKSt8u01kyTg==
+"@api3/contracts@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-4.1.1.tgz#847823370812cc1423b90ae9e6278c70f8e67b20"
+  integrity sha512-IvRyO6CwkI79KxjCDksG12up89vzecuKzy6wg8qLqZqqIpaEhFmxinUMR6083wOhVEAgI2dRe+PRjDH5uAOckg==
   dependencies:
     ethers "^6.12.1"
 
@@ -538,10 +538,10 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-3.4.0.tgz#2c811c2c9a6132cc9a3e0d7003322ffb63cae662"
-  integrity sha512-d8rRg1+NLPYiEFojSlkNbdoJZa/LseZNFdHgxuXoG4tXeW8XFBG9NGnIpN6NGZkkPR+8Ve3ePYUeMlesKD9JFw==
+"@nodary/utilities@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-3.5.0.tgz#94502104b096d20576884c5a4afa41ce34891c3e"
+  integrity sha512-pEHN7oUGgAqKpqs3szC4WRehHS0E5vp4D2I+8VI3QNyNvtwfKLai3Sr3WVeZV1jkPdkzggm9lsLvhCWn1+TRLg==
   dependencies:
     "@api3/airnode-abi" "^0.10.0"
     "@api3/chains" "^7.0.0"
