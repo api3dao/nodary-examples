@@ -20,10 +20,10 @@
     ethers "^5.7.2"
     lodash "^4.17.21"
 
-"@api3/chains@^10.8.0":
-  version "10.8.1"
-  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-10.8.1.tgz#44d6b600d6a3a9580ea809c0b8c88e079409174c"
-  integrity sha512-pWwp0C9ymDdXzqktexBaeeakaOKDErsRigLBuzYSM5DMWhdl/8UzkEWBh6eNXGLLc+fhAhPM+j98Z5LWnKMR8g==
+"@api3/chains@^11.4.0":
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/@api3/chains/-/chains-11.4.0.tgz#a44110204d43381c6116ee70316724b2af395d56"
+  integrity sha512-J4qnCn8RrWIVyEZDPwU9jm5c2SiMvw7eXcSqZcMVv6EbJa1moIQepJWfA+t7+jwLoAOReKDKrTCNMiBAXlihBQ==
   dependencies:
     viem "^2.21.29"
     zod "^3.23.8"
@@ -36,10 +36,10 @@
     viem "^2.13.3"
     zod "^3.23.8"
 
-"@api3/contracts@^9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-9.1.0.tgz#2c99465e968dd0a83792d8fa92ee83b32a850724"
-  integrity sha512-oXmRtP0CXBC9x3HyKztoOriK9P0c7KhwB3fBVxESQHWXSGWO79kLWrz4XZmrd7+975/p66Z8BJBZl20Wm5npCQ==
+"@api3/contracts@^13.2.0":
+  version "13.2.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-13.2.0.tgz#ce6b00b8d305dddcdad1b16e94b505cc36326a4d"
+  integrity sha512-wbR9fcsn0cZw0zaGkEodl14xjAnl2Q6FdKXRvMgQeHruthLx1JkFKtMtd0ysK6YI62ATTxmrJGLVkcCOrL9aYw==
   dependencies:
     ethers "^6.13.2"
 
