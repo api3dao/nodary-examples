@@ -7,16 +7,32 @@ async function main() {
     throw new Error('Environment variable DATA_FEED_ID is not defined');
   }
   const chainId = hre.network.config.chainId;
-  const dataFeedProxyAddress = api3Contracts.computeDataFeedProxyAddress(chainId, dataFeedId, '0x');
+
+  const [deployer] = await hre.ethers.getSigners();
+
+  let proxyFactoryAddress;
+  let dataFeedProxyAddress;
+
+  const api3ServerV1 = api3Contracts.deploymentAddresses.Api3ServerV1[chainId.toString()];
+  console.log('Deploying ProxyFactory contract...');
+
+  const proxyFactory = await hre.deployments.deploy('ProxyFactory', {
+    from: deployer.address,
+    args: [api3ServerV1],
+    log: true,
+    deterministicDeployment: hre.ethers.constants.HashZero,
+  });
+
+  console.log(`ProxyFactory contract deployed to: ${proxyFactory.address}`);
+  proxyFactoryAddress = proxyFactory.address;
+
+  const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
+  const proxyFactoryContract = new hre.ethers.Contract(proxyFactoryAddress, proxyFactoryArtifact.abi, deployer);
+
+  dataFeedProxyAddress = await proxyFactoryContract.computeDataFeedProxyAddress(dataFeedId, '0x');
+
   if ((await hre.ethers.provider.getCode(dataFeedProxyAddress)) === '0x') {
-    const proxyFactoryAddress = api3Contracts.deploymentAddresses.ProxyFactory[chainId.toString()];
-    const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
-    const proxyFactory = new hre.ethers.Contract(
-      proxyFactoryAddress,
-      proxyFactoryArtifact.abi,
-      (await hre.ethers.getSigners())[0]
-    );
-    const receipt = await proxyFactory.deployDataFeedProxy(dataFeedId, '0x');
+    const receipt = await proxyFactoryContract.deployDataFeedProxy(dataFeedId, '0x');
     await new Promise((resolve) =>
       hre.ethers.provider.once(receipt.hash, () => {
         resolve();
