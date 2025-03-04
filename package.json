@@ -22,9 +22,9 @@
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
   "devDependencies": {
-    "@api3/chains": "^10.8.1",
-    "@api3/contracts": "^9.1.0",
-    "@nodary/utilities": "^4.1.0",
+    "@api3/contracts": "17.2.0",
+    "@api3/contracts-v9": "npm:@api3/contracts@9.1.0",
+    "@nodary/utilities": "^5.0.1",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
@@ -50,5 +50,6 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.9.6"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
