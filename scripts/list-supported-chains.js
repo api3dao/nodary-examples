@@ -1,4 +1,4 @@
-const { CHAINS } = require('@api3/chains');
+const { CHAINS } = require('@api3/contracts');
 const { nodaryChainIds } = require('@nodary/utilities');
 
 async function main() {
