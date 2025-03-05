@@ -48,7 +48,7 @@ NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x93F7efd59A74A3Ccc7168C0De481461e5Bd9518c yarn deploy
+NETWORK=ethereum-sepolia-testnet PROXY=<0xDataFeedProxyAddress> yarn deploy
 ```
 
 - Have `DataFeedReaderExample` read from the proxy you have deployed by using the command below with your `NETWORK` value
