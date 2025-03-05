@@ -10,9 +10,6 @@ async function main() {
 
   const [deployer] = await hre.ethers.getSigners();
 
-  let proxyFactoryAddress;
-  let dataFeedProxyAddress;
-
   const api3ServerV1 = api3Contracts.deploymentAddresses.Api3ServerV1[chainId.toString()];
   console.log('Deploying ProxyFactory contract...');
 
@@ -23,13 +20,15 @@ async function main() {
     deterministicDeployment: hre.ethers.constants.HashZero,
   });
 
-  console.log(`ProxyFactory contract deployed to: ${proxyFactory.address}`);
-  proxyFactoryAddress = proxyFactory.address;
+  console.log(
+    `ProxyFactory contract${!proxyFactory.newlyDeployed ? ' was already ' : ' '}deployed to: ${proxyFactory.address}`
+  );
+  const proxyFactoryAddress = proxyFactory.address;
 
   const proxyFactoryArtifact = await hre.artifacts.readArtifact('IProxyFactory');
   const proxyFactoryContract = new hre.ethers.Contract(proxyFactoryAddress, proxyFactoryArtifact.abi, deployer);
 
-  dataFeedProxyAddress = await proxyFactoryContract.computeDataFeedProxyAddress(dataFeedId, '0x');
+  const dataFeedProxyAddress = await proxyFactoryContract.computeDataFeedProxyAddress(dataFeedId, '0x');
 
   if ((await hre.ethers.provider.getCode(dataFeedProxyAddress)) === '0x') {
     const receipt = await proxyFactoryContract.deployDataFeedProxy(dataFeedId, '0x');
