@@ -17,7 +17,7 @@ async function main() {
     from: deployer.address,
     args: [api3ServerV1],
     log: true,
-    deterministicDeployment: hre.ethers.constants.HashZero,
+    deterministicDeployment: process.env.DETERMINISTIC ? hre.ethers.constants.HashZero : '',
   });
 
   console.log(

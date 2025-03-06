@@ -45,6 +45,13 @@ echo 'MNEMONIC="bike north stone..."' > .env
 NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
 ```
 
+- Deploy `DataFeedProxy` deterministically by using the command below with your `NETWORK` and `DATA_FEED_ID` values.
+  This ensures that the contract is deployed at a predictable address. Deterministic deployment may not be supported on all networks.
+
+```sh
+NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy:deterministic
+```
+
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values
 
 ```sh
