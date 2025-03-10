@@ -7,7 +7,7 @@
     "build": "hardhat compile",
     "deploy": "hardhat deploy --network $NETWORK",
     "deploy-data-feed-proxy": "hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
-    "deploy-data-feed-proxy-with-oev": "hardhat run scripts/deploy-data-feed-proxy-with-oev.js --network $NETWORK",
+    "deploy-data-feed-proxy:deterministic": "DETERMINISTIC=true hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
     "get-data-feed-id": "hardhat run scripts/get-data-feed-id.js",
     "get-sponsor-wallet-addresses": "hardhat run scripts/get-sponsor-wallet-addresses.js",
     "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
@@ -22,9 +22,9 @@
     "update-proxy": "hardhat run scripts/update-proxy.js --network $NETWORK"
   },
   "devDependencies": {
-    "@api3/chains": "^10.8.1",
-    "@api3/contracts": "^9.1.0",
-    "@nodary/utilities": "^4.1.0",
+    "@api3/contracts": "17.2.0",
+    "@api3/contracts-v9": "npm:@api3/contracts@9.1.0",
+    "@nodary/utilities": "^5.0.1",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
     "@nomicfoundation/hardhat-toolbox": "^2.0.2",
