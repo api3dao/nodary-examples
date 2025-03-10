@@ -27,10 +27,20 @@
   dependencies:
     ethers "^6.13.2"
 
-"@api3/contracts@17.2.0", "@api3/contracts@^17.2.0":
+"@api3/contracts@17.2.0":
   version "17.2.0"
   resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-17.2.0.tgz#5786479d65c33a10a947465675e52d08099df817"
   integrity sha512-bkqWgPzXQkT4bTKFn+gaYb3V1A22tt6N46ASt1zZJSKDfDPX2D9br3ESJVhXpJzfHAHMAP6Ytw1Py3tv0Lmt/g==
+  dependencies:
+    ethers "^6.13.2"
+    viem "^2.23.2"
+    yargs "^17.7.2"
+    zod "^3.24.2"
+
+"@api3/contracts@^18.0.0":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@api3/contracts/-/contracts-18.0.0.tgz#3137b491c9ea910e2e51e95787941f1dddf238b4"
+  integrity sha512-ORO+T4gBUgOBBxIiMMP5w/r9zNvXIQWdlxfVm2FGGSkUrPv1VQs/DSg6ZiVFDJnYwfFvfCdlsLdc3Z7yIcuxjg==
   dependencies:
     ethers "^6.13.2"
     viem "^2.23.2"
@@ -562,13 +572,13 @@
   resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-1.7.1.tgz#b251c70f824ce3ca7f8dc3df08d58f005cc0507c"
   integrity sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==
 
-"@nodary/utilities@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-5.0.1.tgz#4ab485be663e76c5741b7386bd410af863599555"
-  integrity sha512-Kb97PPretfkDgcNclXHEjYmNVTpKqBkaCTarap1bqrxN0OcVIofaceOmjo4PkG/wNqYvZztw9ObLJRIlJ7Xzhg==
+"@nodary/utilities@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@nodary/utilities/-/utilities-5.1.0.tgz#a8a57784b54af1eb0b8b7d53cbbe8cfc39c9f0d2"
+  integrity sha512-ju6GkrhedMFioNYDowx0GR1/NJBqvnsqeFxuvpL8mHoz85VMujrNLgaYYNH2Zp7csOFW76azuFw9PuKXyP3Phw==
   dependencies:
     "@api3/airnode-abi" "^0.15.0"
-    "@api3/contracts" "^17.2.0"
+    "@api3/contracts" "^18.0.0"
     ethers "^6.13.5"
 
 "@nodelib/fs.scandir@2.1.5":
