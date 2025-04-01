@@ -3,7 +3,7 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "matchPackageNames": ["@api3/contracts-v9"],
+      "matchCurrentVersion": "npm:@api3/contracts@9.1.0",
       "enabled": false
     },
     {
