@@ -3,10 +3,6 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "matchCurrentValue": "npm:@api3/contracts@9.1.0",
-      "enabled": false
-    },
-    {
       "matchUpdateTypes": ["major"],
       "schedule": ["before 10am on the first day of the month"],
       "groupName": "other major updates"
@@ -27,7 +23,11 @@
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 6pm"],
       "groupName": "api3 minor updates"
-    }
+    },
+    {
+      "matchPackageNames": ["@api3/contracts-v9"],
+      "enabled": false
+    },
   ],
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
