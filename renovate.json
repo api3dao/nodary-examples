@@ -3,6 +3,10 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
+      "matchPackageNames": ["@api3/contracts-v9"],
+      "enabled": false
+    },
+    {
       "matchUpdateTypes": ["major"],
       "schedule": ["before 10am on the first day of the month"],
       "groupName": "other major updates"
@@ -13,13 +17,13 @@
       "groupName": "other minor updates"
     },
     {
-      "matchPackagePatterns": ["@api3/.*", "@phase21/.*", "nodary/.*"],
+      "matchPackagePatterns": ["@api3/.*", "nodary/.*"],
       "matchUpdateTypes": ["major"],
       "schedule": ["before 6pm"],
       "groupName": "api3 major updates"
     },
     {
-      "matchPackagePatterns": ["@api3/.*", "@phase21/.*", "nodary/.*"],
+      "matchPackagePatterns": ["@api3/.*", "nodary/.*"],
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 6pm"],
       "groupName": "api3 minor updates"
