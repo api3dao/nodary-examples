@@ -27,7 +27,7 @@
     {
       "matchPackageNames": ["@api3/contracts-v9"],
       "enabled": false
-    },
+    }
   ],
   "rangeStrategy": "bump",
   "lockFileMaintenance": {
