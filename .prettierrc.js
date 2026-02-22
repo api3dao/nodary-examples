@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ['prettier-plugin-solidity'],
   bracketSpacing: true,
   printWidth: 120,
   singleQuote: true,

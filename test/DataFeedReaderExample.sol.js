@@ -58,8 +58,8 @@ describe('DataFeedReaderExample', function () {
           const dataFeedTimestamp = (await ethers.provider.getBlock()).timestamp;
           await mockProxy.mock(dataFeedValue, dataFeedTimestamp);
           const dataFeed = await dataFeedReaderExample.readDataFeed();
-          expect(dataFeed.value).to.equal(dataFeedValue);
-          expect(dataFeed.timestamp).to.equal(dataFeedTimestamp);
+          expect(dataFeed.value.toString()).to.equal(dataFeedValue.toString());
+          expect(dataFeed.timestamp.toString()).to.equal(dataFeedTimestamp.toString());
         });
       });
       context('Timestamp is older than a day', function () {
