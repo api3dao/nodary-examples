@@ -1,38 +1,25 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended"],
+  "extends": ["local>api3dao/renovate-config"],
+  "major": {
+    "dependencyDashboardApproval": true
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "schedule": ["before 10am on the first day of the month"],
-      "groupName": "other major updates"
-    },
-    {
-      "matchUpdateTypes": ["patch", "minor"],
-      "schedule": ["before 10am on the first day of the month"],
-      "groupName": "other minor updates"
-    },
-    {
-      "matchPackagePatterns": ["@api3/.*", "nodary/.*"],
+      "matchPackageNames": ["@api3/*", "@nodary/*"],
       "matchUpdateTypes": ["major"],
       "schedule": ["before 6pm"],
-      "groupName": "api3 major updates"
+      "groupName": "api3 major updates",
+      "minimumReleaseAge": null,
+      "dependencyDashboardApproval": false
     },
     {
-      "matchPackagePatterns": ["@api3/.*", "nodary/.*"],
+      "matchPackageNames": ["@api3/*", "@nodary/*"],
       "matchUpdateTypes": ["patch", "minor"],
       "schedule": ["before 6pm"],
-      "groupName": "api3 minor updates"
-    },
-    {
-      "matchPackageNames": ["@api3/contracts-v9"],
-      "enabled": false
+      "groupName": "api3",
+      "minimumReleaseAge": null
     }
   ],
-  "rangeStrategy": "bump",
-  "lockFileMaintenance": {
-    "enabled": false
-  },
-  "reviewers": ["bdrhn9"],
-  "dependencyDashboard": false
+  "reviewers": ["bdrhn9"]
 }
