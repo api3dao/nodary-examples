@@ -2,6 +2,10 @@
   "name": "@nodary/examples",
   "version": "1.0.0",
   "license": "MIT",
+  "packageManager": "pnpm@10.26.2",
+  "engines": {
+    "pnpm": "^10.26.2"
+  },
   "description": "An example project for reading Nodary data feeds",
   "scripts": {
     "build": "hardhat compile",
@@ -10,7 +14,7 @@
     "deploy-data-feed-proxy:deterministic": "DETERMINISTIC=true hardhat run scripts/deploy-data-feed-proxy.js --network $NETWORK",
     "get-data-feed-id": "hardhat run scripts/get-data-feed-id.js",
     "get-sponsor-wallet-addresses": "hardhat run scripts/get-sponsor-wallet-addresses.js",
-    "lint": "yarn run prettier:check && yarn run lint:eslint && yarn run lint:solhint",
+    "lint": "pnpm run prettier:check && pnpm run lint:eslint && pnpm run lint:solhint",
     "lint:solhint": "solhint ./contracts/**/*.sol",
     "lint:eslint": "eslint . --ext .js,.ts",
     "list-supported-chains": "node scripts/list-supported-chains.js",
@@ -37,6 +41,7 @@
     "chai": "^4.5.0",
     "dotenv": "^16.5.0",
     "eslint": "^8.57.1",
+    "ethers": "^5.7.2",
     "hardhat": "^2.24.3",
     "hardhat-deploy": "^0.14.1",
     "hardhat-gas-reporter": "^1.0.10",
