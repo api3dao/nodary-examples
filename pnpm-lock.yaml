@@ -13,8 +13,8 @@ importers:
         version: 4.9.6
     devDependencies:
       '@api3/contracts':
-        specifier: 24.0.0
-        version: 24.0.0(typescript@5.9.3)
+        specifier: 24.2.1
+        version: 24.2.1(typescript@5.9.3)
       '@api3/contracts-v9':
         specifier: npm:@api3/contracts@9.1.0
         version: '@api3/contracts@9.1.0'
@@ -102,8 +102,8 @@ packages:
   '@api3/airnode-abi@0.15.0':
     resolution: {integrity: sha512-MMq5pBkXFA6QkqTLCWWygGXz7TdmYe8dFbgQs9IEmp0Av05U7min6rottBcRhjpOEo8LXT8InkIbdmql+UaS3A==}
 
-  '@api3/contracts@24.0.0':
-    resolution: {integrity: sha512-3Ii5HBLSCH+uOBGMToy69L9O/yT36fN60nxuEm9Z8nECM6D28/elnWQQb5R6B0FGHgtpMUPpZOrqNM6AD/JdvA==}
+  '@api3/contracts@24.2.1':
+    resolution: {integrity: sha512-g6I/ZyRDOZes4grtJHuiPyzJJxbh519CxsWD+p0eMKxbQUzDQOor44jpHVPxEDNGJBueM7n/S+ZRH6mhnTgElQ==}
     engines: {node: '>=20.17.9'}
     hasBin: true
 
@@ -2704,7 +2704,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@api3/contracts@24.0.0(typescript@5.9.3)':
+  '@api3/contracts@24.2.1(typescript@5.9.3)':
     dependencies:
       ethers: 6.16.0
       viem: 2.45.1(typescript@5.9.3)(zod@3.25.76)
@@ -3258,7 +3258,7 @@ snapshots:
   '@nodary/utilities@6.0.0(@types/node@25.2.2)(typescript@5.9.3)':
     dependencies:
       '@api3/airnode-abi': 0.15.0
-      '@api3/contracts': 24.0.0(typescript@5.9.3)
+      '@api3/contracts': 24.2.1(typescript@5.9.3)
       '@changesets/cli': 2.29.8(@types/node@25.2.2)
       ethers: 6.16.0
     transitivePeerDependencies:
@@ -3532,11 +3532,11 @@ snapshots:
 
   '@types/concat-stream@1.6.1':
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 25.2.2
 
   '@types/form-data@0.0.33':
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 25.2.2
 
   '@types/glob@7.2.0':
     dependencies:
