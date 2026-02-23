@@ -19,6 +19,10 @@
       "schedule": ["before 6pm"],
       "groupName": "api3",
       "minimumReleaseAge": null
+    },
+    {
+      "matchCurrentVersion": "npm:@api3/contracts@9.1.0",
+      "enabled": false
     }
   ],
   "reviewers": ["bdrhn9"]
