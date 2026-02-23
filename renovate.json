@@ -21,7 +21,7 @@
       "minimumReleaseAge": null
     },
     {
-      "matchCurrentVersion": "npm:@api3/contracts@9.1.0",
+      "matchDepNames": ["@api3/contracts-v9"],
       "enabled": false
     }
   ],
