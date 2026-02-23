@@ -10,7 +10,7 @@ See https://github.com/api3dao/data-feed-reader-example for an example that uses
 - Install dependencies
 
 ```sh
-yarn
+pnpm
 ```
 
 - Create a `.env` file similar to `example.env`
@@ -25,14 +25,14 @@ echo 'MNEMONIC="bike north stone..."' > .env
     You can also use the following command with your `FEED_NAME` value.
 
     ```sh
-    FEED_NAME=ETH/USD yarn get-data-feed-id
+    FEED_NAME=ETH/USD pnpm get-data-feed-id
     ```
 
   - Copy the sponsor wallet address corresponding to the deviation threshold you like from the table.
     You can also use the following command with your `FEED_NAME` value.
 
     ```sh
-    FEED_NAME=ETH/USD yarn get-sponsor-wallet-addresses
+    FEED_NAME=ETH/USD pnpm get-sponsor-wallet-addresses
     ```
 
 - Fund the sponsor wallet (unless it is already funded).
@@ -42,26 +42,26 @@ echo 'MNEMONIC="bike north stone..."' > .env
   See the [supported networks section](#supported-networks) for valid `NETWORK` values.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy
+NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d pnpm deploy-data-feed-proxy
 ```
 
 - Deploy `DataFeedProxy` deterministically by using the command below with your `NETWORK` and `DATA_FEED_ID` values.
   This ensures that the contract is deployed at a predictable address. Deterministic deployment may not be supported on all networks.
 
 ```sh
-NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d yarn deploy-data-feed-proxy:deterministic
+NETWORK=ethereum-sepolia-testnet DATA_FEED_ID=0x4385954e058fbe6b6a744f32a4f89d67aad099f8fb8b23e7ea8dd366ae88151d pnpm deploy-data-feed-proxy:deterministic
 ```
 
 - Deploy `DataFeedReaderExample` by using the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=<0xDataFeedProxyAddress> yarn deploy
+NETWORK=ethereum-sepolia-testnet PROXY=<0xDataFeedProxyAddress> pnpm deploy
 ```
 
 - Have `DataFeedReaderExample` read from the proxy you have deployed by using the command below with your `NETWORK` value
 
 ```sh
-NETWORK=ethereum-sepolia-testnet yarn read-data-feed
+NETWORK=ethereum-sepolia-testnet pnpm read-data-feed
 ```
 
 ## Supported networks
@@ -70,7 +70,7 @@ Chains listed on [nodary.io/chains](https://nodary.io/chains) are all supported.
 You can run the following command to list them.
 
 ```sh
-yarn list-supported-chains
+pnpm list-supported-chains
 ```
 
 ## Local development and testing
@@ -79,7 +79,7 @@ yarn list-supported-chains
 See the [tests](./test/DataFeedReaderExample.sol.js) for its usage, and run the tests with the following command.
 
 ```sh
-yarn test
+pnpm test
 ```
 
 ## Update the proxy address of `DataFeedReaderExample`
@@ -91,11 +91,11 @@ You can update the proxy that your `DataFeedReaderExample` reads from.
 - Use the command below with your `NETWORK` and `PROXY` values
 
 ```sh
-NETWORK=ethereum-sepolia-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 yarn update-proxy
+NETWORK=ethereum-sepolia-testnet PROXY=0x08506208E776ecbdF4cE9DB69C08Aa90A06825C0 pnpm update-proxy
 ```
 
 - Use the command below to confirm that `DataFeedReaderExample` now reads the new data feed
 
 ```sh
-NETWORK=ethereum-sepolia-testnet yarn read-data-feed
+NETWORK=ethereum-sepolia-testnet pnpm read-data-feed
 ```
