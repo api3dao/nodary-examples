@@ -1,5 +1,7 @@
-const { CHAINS } = require('@api3/contracts');
-const { nodaryChainIds } = require('@nodary/utilities');
+const {
+  api3Contracts: { CHAINS },
+  nodaryChainIds,
+} = require('@nodary/utilities');
 
 async function main() {
   const supportedChains = nodaryChainIds()
