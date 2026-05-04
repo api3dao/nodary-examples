@@ -1,6 +1,8 @@
 require('@nomicfoundation/hardhat-toolbox');
 require('hardhat-deploy');
-const { hardhatConfig } = require('@api3/contracts');
+const {
+  api3Contracts: { hardhatConfig },
+} = require('@nodary/utilities');
 require('dotenv').config();
 
 module.exports = {

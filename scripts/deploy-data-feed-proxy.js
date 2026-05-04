@@ -1,5 +1,5 @@
 const hre = require('hardhat');
-const api3Contracts = require('@api3/contracts');
+const { api3Contracts } = require('@nodary/utilities');
 
 async function main() {
   const dataFeedId = process.env.DATA_FEED_ID;
