@@ -1,6 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>api3dao/renovate-config"],
+  "platformAutomerge": false,
+  "lockFileMaintenance": { "automerge": true },
   "major": {
     "dependencyDashboardApproval": true
   },
@@ -23,6 +25,12 @@
     {
       "matchDepNames": ["@api3/contracts-v9"],
       "enabled": false
+    },
+    {
+      "description": "Automerge non-major prod and dev dependency updates once CI passes",
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
     }
   ],
   "reviewers": ["bdrhn9"]
