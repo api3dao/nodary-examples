@@ -16,8 +16,8 @@ importers:
         specifier: npm:@api3/contracts@9.1.0
         version: '@api3/contracts@9.1.0'
       '@nodary/utilities':
-        specifier: ^8.1.0
-        version: 8.1.0(@types/node@25.6.0)(typescript@6.0.3)
+        specifier: ^8.2.0
+        version: 8.2.0(@types/node@25.6.0)(typescript@6.0.3)
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^1.0.6
         version: 1.0.6(@nomiclabs/hardhat-ethers@2.2.3(ethers@5.8.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.6.0)(typescript@6.0.3))(typescript@6.0.3)))(chai@4.5.0)(ethers@5.8.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@25.6.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -387,8 +387,8 @@ packages:
   '@noble/secp256k1@1.7.1':
     resolution: {integrity: sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==}
 
-  '@nodary/utilities@8.1.0':
-    resolution: {integrity: sha512-kNdWPiul5D+ir1mo9XbsjNbjnumZyBMlaxjg3dRa6urC9ChMEQUkasj/4XXDrNBqvC7oed6dnRbPrWKh9DeIFA==}
+  '@nodary/utilities@8.2.0':
+    resolution: {integrity: sha512-mJ9LjvJcnIKBd9T1mGprF9UU5KIaE23AvqTWkiJ6ib/EC/bSNRUt4SLeZoV6Nzmwav4s1R6TR7XMsJ0pXkFYHw==}
     engines: {node: '>=22.23.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3261,12 +3261,12 @@ snapshots:
 
   '@noble/secp256k1@1.7.1': {}
 
-  '@nodary/utilities@8.1.0(@types/node@25.6.0)(typescript@6.0.3)':
+  '@nodary/utilities@8.2.0(@types/node@25.6.0)(typescript@6.0.3)':
     dependencies:
       '@api3/airnode-abi': 0.15.0
       '@api3/contracts': 38.1.0(typescript@6.0.3)
       '@changesets/cli': 2.31.0(@types/node@25.6.0)
-      ethers: 6.16.0
+      ethers: 6.17.0
     transitivePeerDependencies:
       - '@types/node'
       - bufferutil
