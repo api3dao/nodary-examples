@@ -16,8 +16,8 @@ importers:
         specifier: npm:@api3/contracts@9.1.0
         version: '@api3/contracts@9.1.0'
       '@nodary/utilities':
-        specifier: ^8.3.0
-        version: 8.3.0(@types/node@26.1.0)(typescript@6.0.3)
+        specifier: ^9.0.0
+        version: 9.0.0(@types/node@26.1.0)(typescript@6.0.3)
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^1.0.6
         version: 1.0.6(@nomiclabs/hardhat-ethers@2.2.3(ethers@5.8.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@26.1.0)(typescript@6.0.3))(typescript@6.0.3)))(chai@4.5.0)(ethers@5.8.0)(hardhat@2.28.6(ts-node@10.9.2(@types/node@26.1.0)(typescript@6.0.3))(typescript@6.0.3))
@@ -96,8 +96,8 @@ packages:
   '@api3/airnode-abi@0.15.0':
     resolution: {integrity: sha512-MMq5pBkXFA6QkqTLCWWygGXz7TdmYe8dFbgQs9IEmp0Av05U7min6rottBcRhjpOEo8LXT8InkIbdmql+UaS3A==}
 
-  '@api3/contracts@38.2.1':
-    resolution: {integrity: sha512-BFwU0px/hzySr/zciuPqZVrTUNXP5TkWX8RHGJP7CI5Hee7DoaXaUhTNjQa3WSZdUXnpLVVXRko3DGbVaIVXtw==}
+  '@api3/contracts@40.0.0':
+    resolution: {integrity: sha512-biBYyuV0OmofoewApFu+ZPS7ezk49Z7q4rF3NfOq52WgF+H+pBb+P0isJpqss2W01z13BXL8Iz8YoIm4eXan5g==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -126,8 +126,8 @@ packages:
   '@changesets/changelog-git@0.2.1':
     resolution: {integrity: sha512-x/xEleCFLH28c3bQeQIyeZf8lFXyDFVn1SgcBiR2Tw/r4IAWlk1fzxCEZ6NxQAjF2Nwtczoen3OA2qR+UawQ8Q==}
 
-  '@changesets/cli@2.31.0':
-    resolution: {integrity: sha512-AhI4enNTgHu2IZr6K4WZyf0EPch4XVMn1yOMFmCD9gsfBGqMYaHXls5HyDv6/CL5axVQABz68eG30eCtbr2wFg==}
+  '@changesets/cli@2.31.1':
+    resolution: {integrity: sha512-uO05WTcRBwuVOJVSW8Cmpqw6q0WDL53ajGCMyszutvOe5toOnunbpM4jZzf+qxBOz7i0AzopZ8diBuewjmF40w==}
     hasBin: true
 
   '@changesets/config@3.1.4':
@@ -384,8 +384,8 @@ packages:
   '@noble/secp256k1@1.7.1':
     resolution: {integrity: sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==}
 
-  '@nodary/utilities@8.3.0':
-    resolution: {integrity: sha512-smlcmzrA7ybaCiC1d4gNBLwJ4rVrSIrAU0quoZFGCVEXRtVeCCdzET6Qo/+Upb6OE/z+iSB6b+d8e0aKKQzBMA==}
+  '@nodary/utilities@9.0.0':
+    resolution: {integrity: sha512-erwJ8leUEBdCT65nmReNuM1Wfn0ZYIs+84WlYkG0fL4jFpTkSRmeab7zyIEO+V7ekAiaIGz3sK54uSjd5gfvNQ==}
     engines: {node: '>=22.23.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2683,7 +2683,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@api3/contracts@38.2.1(typescript@6.0.3)':
+  '@api3/contracts@40.0.0(typescript@6.0.3)':
     dependencies:
       ethers: 6.17.0
       viem: 2.54.6(typescript@6.0.3)(zod@4.4.3)
@@ -2740,7 +2740,7 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/cli@2.31.0(@types/node@26.1.0)':
+  '@changesets/cli@2.31.1(@types/node@26.1.0)':
     dependencies:
       '@changesets/apply-release-plan': 7.1.1
       '@changesets/assemble-release-plan': 6.0.10
@@ -3227,11 +3227,11 @@ snapshots:
 
   '@noble/secp256k1@1.7.1': {}
 
-  '@nodary/utilities@8.3.0(@types/node@26.1.0)(typescript@6.0.3)':
+  '@nodary/utilities@9.0.0(@types/node@26.1.0)(typescript@6.0.3)':
     dependencies:
       '@api3/airnode-abi': 0.15.0
-      '@api3/contracts': 38.2.1(typescript@6.0.3)
-      '@changesets/cli': 2.31.0(@types/node@26.1.0)
+      '@api3/contracts': 40.0.0(typescript@6.0.3)
+      '@changesets/cli': 2.31.1(@types/node@26.1.0)
       ethers: 6.17.0
     transitivePeerDependencies:
       - '@types/node'
