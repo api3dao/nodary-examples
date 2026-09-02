@@ -16,8 +16,8 @@ importers:
         specifier: npm:@api3/contracts@9.1.0
         version: '@api3/contracts@9.1.0'
       '@nodary/utilities':
-        specifier: ^9.0.0
-        version: 9.0.0(@types/node@26.2.0)(typescript@7.0.2)
+        specifier: ^9.1.0
+        version: 9.1.0(@types/node@26.2.0)(typescript@7.0.2)
       '@nomicfoundation/hardhat-chai-matchers':
         specifier: ^1.0.6
         version: 1.0.6(@nomiclabs/hardhat-ethers@2.2.3(ethers@5.8.0)(hardhat@2.29.0(ts-node@10.9.2(@types/node@26.2.0)(typescript@7.0.2))(typescript@7.0.2)))(chai@4.5.0)(ethers@5.8.0)(hardhat@2.29.0(ts-node@10.9.2(@types/node@26.2.0)(typescript@7.0.2))(typescript@7.0.2))
@@ -388,8 +388,8 @@ packages:
   '@noble/secp256k1@1.7.1':
     resolution: {integrity: sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==}
 
-  '@nodary/utilities@9.0.0':
-    resolution: {integrity: sha512-erwJ8leUEBdCT65nmReNuM1Wfn0ZYIs+84WlYkG0fL4jFpTkSRmeab7zyIEO+V7ekAiaIGz3sK54uSjd5gfvNQ==}
+  '@nodary/utilities@9.1.0':
+    resolution: {integrity: sha512-7QHdE+A0y8U0QMA0XEXKUOAXxcEEtYg/xe/MmtP08DXVOCXx6Zpsn+2QQDB9V/iSp7vy9iHYybwghlJaB9FFhQ==}
     engines: {node: '>=22.23.0'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3432,7 +3432,7 @@ snapshots:
 
   '@noble/secp256k1@1.7.1': {}
 
-  '@nodary/utilities@9.0.0(@types/node@26.2.0)(typescript@7.0.2)':
+  '@nodary/utilities@9.1.0(@types/node@26.2.0)(typescript@7.0.2)':
     dependencies:
       '@api3/airnode-abi': 0.15.0
       '@api3/contracts': 40.0.0(typescript@7.0.2)
@@ -3712,11 +3712,11 @@ snapshots:
 
   '@types/concat-stream@1.6.1':
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 26.2.0
 
   '@types/form-data@0.0.33':
     dependencies:
-      '@types/node': 8.10.66
+      '@types/node': 26.2.0
 
   '@types/glob@7.2.0':
     dependencies:
