@@ -58,7 +58,7 @@ importers:
         specifier: ^5.8.0
         version: 5.8.0
       hardhat:
-        specifier: ^2.29.0
+        specifier: ^2.29.1
         version: 2.29.1(ts-node@10.9.2(@types/node@26.6.6)(typescript@7.0.2))(typescript@7.0.2)
       hardhat-deploy:
         specifier: ^0.14.1
